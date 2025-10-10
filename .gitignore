@@ -1,0 +1,11 @@
+__pycache__/
+.venv/
+.env*
+.DS_Store
+.vscode/
+data/
+models/
+warehouse/
+*.db
+*.parquet
+.ipynb_checkpoints/
