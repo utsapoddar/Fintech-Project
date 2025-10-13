@@ -15,6 +15,6 @@ Run the Python script `project.py` after placing `creditcard.csv` in the project
 - report the number of null values in each column;
 - check for any negative values in the `Amount` field;
 - display the distribution of the `Class` labels (0 = normal, 1 = fraud);
-- show basic statistics for the `Time` and `Amount` columns.
+- show basic statistics for the `Time` and `Amount` columns
 
 Feel free to extend the script with feature engineering, model training, and thresholding based on your analysis plan.
