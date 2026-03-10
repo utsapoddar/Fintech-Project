@@ -11,3 +11,7 @@ warehouse/
 *.db
 *.parquet
 .ipynb_checkpoints/
+# macOS resource forks
+._*
+# Virtual environment
+fintechproject/
