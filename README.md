@@ -4,7 +4,7 @@ This project is a starting point for exploring credit‑card transaction data an
 
 ## Overview
 
-The repository centres around a **Jupyter friendly Python script (`project.py`)** that reads a credit‑card transaction dataset and surfaces basic descriptive statistics. It provides a foundation for further feature engineering, model training, and evaluation. The goal of this project is to help you familiarise yourself with the dataset and to encourage you to develop your own fraud‑risk models.
+The repository contains an **exploratory data analysis script (`project.py`)** and a **Random Forest fraud detection model (`model.py`)**. The EDA script surfaces basic descriptive statistics, while the model trains a balanced Random Forest classifier that achieves **96% precision and 74% recall** on fraud detection.
 
 ## Dataset
 
@@ -13,34 +13,41 @@ The project uses the public **ULB credit‑card fraud dataset**, which contains 
 ## Getting started
 
 1. **Clone this repository** or download the source code.
-2. Install the required dependencies. A minimal Python environment (Python 3.8+) with **pandas** is sufficient:
+2. Create and activate a virtual environment (Python 3.14):
 
    ```bash
-   pip install pandas
+   python -m venv fintechproject
+   source fintechproject/Scripts/activate    # Windows (Git Bash)
+   source fintechproject/bin/activate        # macOS/Linux
    ```
 
-3. Download `creditcard.csv` from Kaggle and save it alongside `project.py`.
-4. Run the script:
+3. Install dependencies:
+
+   ```bash
+   pip install pandas scikit-learn
+   ```
+
+4. Download `creditcard.csv` from Kaggle and save it in the project root.
+5. Run the EDA script:
 
    ```bash
    python project.py
    ```
 
-   The script will:
+   This will print dataset shape, null values, class distribution, and basic statistics.
 
-   - load the dataset into a pandas DataFrame;
-   - print the shape and preview of the first few rows;
-   - report the number of null values per column;
-   - check for negative values in the `Amount` field;
-   - display the distribution of fraud vs. normal transactions;
-   - show basic statistics for the `Time` and `Amount` columns.
+6. Run the fraud detection model:
 
-5. Extend the code with your own analysis: try creating new features (e.g., transaction amount ratios), building classification models, or experimenting with thresholding techniques.
+   ```bash
+   python model.py
+   ```
+
+   This will train a Random Forest classifier and print the confusion matrix and classification report (precision, recall, F1-score).
 
 ## Next steps
 
 - **Feature engineering** – extract useful features such as time‑based aggregates, rolling averages, or customer behaviour metrics.
-- **Model training** – implement models like logistic regression, random forests, or gradient boosting. Compare their performance using metrics such as precision, recall and AUC.
+- **Additional models** – compare performance with logistic regression, gradient boosting, or neural networks using metrics such as AUC and F1-score.
 - **Thresholding and evaluation** – explore how different classification thresholds affect false positives/negatives and overall risk.
 
 ## Contributing
