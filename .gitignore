@@ -15,3 +15,6 @@ warehouse/
 ._*
 # Virtual environment
 fintechproject/
+
+# scratch
+model_output.txt

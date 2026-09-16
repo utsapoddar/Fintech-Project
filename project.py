@@ -21,6 +21,3 @@ print(df["Class"].value_counts())
 # Describe 'Time' and 'Amount' columns
 print("\nDescribe Time & Amount:")
 print(df[["Time", "Amount"]].describe())
-
-# lets try to add some more lines
-# lets try this again

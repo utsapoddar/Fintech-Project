@@ -4,7 +4,7 @@ This project is a starting point for exploring credit‑card transaction data an
 
 ## Overview
 
-The repository contains an **exploratory data analysis script (`project.py`)** and a **Random Forest fraud detection model (`model.py`)**. The EDA script surfaces basic descriptive statistics, while the model trains a balanced Random Forest classifier that achieves **96% precision and 74% recall** on fraud detection.
+The repository contains an **exploratory data analysis script (`project.py`)** and a **Random Forest fraud detection model (`model.py`)**. The EDA script surfaces basic descriptive statistics, while the model trains a balanced Random Forest classifier that achieves **96% precision and 74% recall** on fraud detection. The full classification report, along with what those numbers do and do not mean, is in [RESULTS.md](RESULTS.md).
 
 ## Dataset
 
